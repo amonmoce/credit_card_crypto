@@ -9,7 +9,7 @@ card_numbers.each do |mediator, numbers|
     numbers.each do |number|
       it "works on card #: #{number}" do
         card = CreditCard.new(number, nil, nil, nil)
-        card.validate_checksum.must_equal true
+        card.validate_checksum_second.must_equal true
       end
     end
   end
